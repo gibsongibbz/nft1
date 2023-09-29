@@ -43,7 +43,7 @@ const ipfs = ipfsAPI({
 const { ethers } = require("ethers");
 
 /*
-    Welcome to 🏗 scaffold-eth !
+    Welcome to 🏗 scaffold-eth gibz gibson !
 
     Code:
     https://github.com/scaffold-eth/scaffold-eth
@@ -266,9 +266,9 @@ function App() {
 
   // If you want to call a function on a new block
   useOnBlock(mainnetProvider, () => {
-    console.log(`⛓ A new mainnet block is here: ${mainnetProvider._lastBlockNumber}`);
+    console.log(`⛓ A new mainnet block  is here check out hiii: ${mainnetProvider._lastBlockNumber}`);
   });
-
+   
   // Then read your DAI balance like:
   const myMainnetDAIBalance = useContractReader(mainnetContracts, "DAI", "balanceOf", [
     "0x34aA3F359A9D614239015126635CE7732c18fDF3",
@@ -521,10 +521,11 @@ function App() {
   // the json for the nfts
   const json = {
     1: {
-      description: "It's actually a bison?",
-      external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
-      image: "https://austingriffith.com/images/paintings/buffalo.jpg",
-      name: "Buffalo",
+      description: "Egypt - The Gift of the Nile and Pyramids of Prosperity:",
+      external_url: "https://austingriffith.com/portfolio/paintings/", // <-- Economic Gem: Egypt's economy thrives on its diverse sectors, including tourism, agriculture, and manufacturing. Its strategic location along the Suez Canal makes it a global trade hub.
+      //Charming Aspect: Home to the iconic pyramids and the magnificent Nile River, Egypt's cultural heritage is not only an economic asset but also a testament to human ingenuity and ancient civilizations that still bewitch the world.
+      image: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*0F-1_vfqRBCsgRvbPTTFgA.png",
+      name: "Egypt",
       attributes: [
         {
           trait_type: "BackgroundColor",
@@ -541,10 +542,11 @@ function App() {
       ],
     },
     2: {
-      description: "What is it so worried about?",
-      external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
-      image: "https://austingriffith.com/images/paintings/zebra.jpg",
-      name: "Zebra",
+      description: "Nigeria - The Giant of Africa's Economy",
+      external_url: "https://austingriffith.com/portfolio/paintings/", // <-- conomic Gem: Nigeria has the largest economy in Africa, largely driven by its oil production, agriculture, and a booming tech industry. It's often called the "Giant of Africa" due to its economic dominance.
+      //Charming Aspect: Nigerian music, known for its vibrant Afrobeat and globally acclaimed artists like Burna Boy and Wizkid, resonates with people worldwide. It's a testament to the country's cultural influence. -->
+      image: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*0F-1_vfqRBCsgRvbPTTFgA.png",
+      name: "Nigeria",
       attributes: [
         {
           trait_type: "BackgroundColor",
@@ -561,10 +563,11 @@ function App() {
       ],
     },
     3: {
-      description: "What a horn!",
-      external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
-      image: "https://austingriffith.com/images/paintings/rhino.jpg",
-      name: "Rhino",
+      description: "Kenya - The Cradle of Innovation and Safari Adventures",
+      external_url: "https://austingriffith.com/portfolio/paintings/", // <-- tEconomic Gem: Kenya is at the forefront of African innovation, with a thriving tech startup scene and a rapidly growing mobile banking sector, exemplified by the success of M-Pesa.
+      //Charming Aspect: Beyond its economic prowess, Kenya is celebrated for its breathtaking wildlife and safari adventures. The Maasai Mara, with its majestic wildebeest migration, is a natural wonder.
+      image: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*0F-1_vfqRBCsgRvbPTTFgA.png",
+      name: "Kenya",
       attributes: [
         {
           trait_type: "BackgroundColor",
@@ -581,10 +584,11 @@ function App() {
       ],
     },
     4: {
-      description: "Is that an underbyte?",
-      external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
-      image: "https://austingriffith.com/images/paintings/fish.jpg",
-      name: "Fish",
+      description: "South Africa - The Rainbow Nation's Mineral Wealth",
+      external_url: "https://austingriffith.com/portfolio/paintings/", // <-- tEconomic Gem: South Africa is one of the world's largest producers of minerals like gold, platinum, and diamonds. Its economy is highly industrialized and diversified.
+      //Charming Aspect: South Africa's rich cultural diversity and the legacy of Nelson Mandela's struggle for freedom make it a "Rainbow Nation." It's a place where cultures blend and inspire.
+      image: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*0F-1_vfqRBCsgRvbPTTFgA.png",
+      name: "South Africa",
       attributes: [
         {
           trait_type: "BackgroundColor",
@@ -601,10 +605,11 @@ function App() {
       ],
     },
     5: {
-      description: "So delicate.",
-      external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
-      image: "https://austingriffith.com/images/paintings/flamingo.jpg",
-      name: "Flamingo",
+      description: " Morocco - The Bridge Between Continents:",
+      external_url: "https://austingriffith.com/portfolio/paintings/", // <-- Economic Gem: Morocco's economy is characterized by its agricultural exports, thriving tourism industry, and booming manufacturing sector.
+      //Charming Aspect: Located at the crossroads of Europe and Africa, Morocco's unique blend of Arab, Berber, and European influences is reflected in its stunning architecture, vibrant souks, and delicious cuisine.
+      image: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*0F-1_vfqRBCsgRvbPTTFgA.png",
+      name: "Morocco",
       attributes: [
         {
           trait_type: "BackgroundColor",
@@ -621,10 +626,11 @@ function App() {
       ],
     },
     6: {
-      description: "Raaaar!",
-      external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
-      image: "https://austingriffith.com/images/paintings/godzilla.jpg",
-      name: "Godzilla",
+      description: "Ghana - The Land of Gold and Vibrant Kente Fabric:",
+      external_url: "https://austingriffith.com/portfolio/paintings/", // <-- Economic Gem: Ghana is a leading exporter of cocoa and gold, making it one of the world's top producers. Its stable democracy and growing oil industry contribute to its economic success.
+      //Charming Aspect: Ghana is renowned for its colorful Kente fabric, which tells stories through intricate patterns and vibrant colors. It symbolizes the country's rich history and artistic traditions.
+      image: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*0F-1_vfqRBCsgRvbPTTFgA.png",
+      name: "Ghana",
       attributes: [
         {
           trait_type: "BackgroundColor",
